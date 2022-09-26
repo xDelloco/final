@@ -14,7 +14,7 @@ $(document).ready(function(){
       entry.target.classList.toggle("show", entry.isIntersecting)
     })
   }, {
-    threshold: 0.5
+    threshold: 0.3
   })
 
   cards.forEach(card => {
