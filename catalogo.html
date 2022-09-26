@@ -1,0 +1,285 @@
+﻿<!doctype html>
+<html lang="es">
+
+<head>
+	<!-- la etiqueta title es obligatoria-->
+	<title> Ovejitas | Catalogo </title>
+	<!--la etiqueta meta no tiene cierre-->
+	<meta name="author" content="Mauricio H">
+	<meta charset="utf-8">
+	<meta name="description" content="Tienda de colchones">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="descripción del ejercicio">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/blog.css">
+
+	<style>
+
+	#menunavegacion{
+		text-align:center;
+	}
+
+	#menunavegacion ul li a{
+		padding:1%;
+		margin-top:5%;
+		margin-bottom:5%;
+	}
+
+		.fa-1x {
+    font-size: 2.5em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+	}
+
+	.bn31{
+		width:100%;
+	}
+
+	#ordenarproductos{
+		margin-top:5%;
+	}
+
+	.bedrow{
+		margin-top:5%;
+	}
+
+
+	</style>
+	</head>
+<body>
+
+	<div class="container-fluid sticky-top ">
+	<header id="cabecerageneral" class="row align-items-center">
+
+		<section id="cabeceralogo" class="col-xs-12 col-md-4 col-lg-2 center-md">
+			<article id="logoempresa">
+				<a href="index.html"><img src="img/OVEJITAHD.png"></a>
+			</article>
+		</section>
+
+		<section id="cabeceratitle" class="col-lg-8 d-none d-lg-block">
+			<article id="navegacion">
+				<ul id="menu">
+					<li><a href="index.html" target="_blank">Inicio</a></li>
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Nuestros Productos
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="reutilizamiento.html">Reutilizamiento</a>
+							<a class="dropdown-item" href="catalogo.html">Catalogo</a>
+						</div>
+					</div>
+					<li><a href="enterprise.html" target="_blank">Nuestra Empresa</a></li>
+					<li><a href="contacto.html" target="_blank">Contactanos</a></li>
+					<li><a href="blog.html" target="_blank">Blog</a></li>
+				</ul>
+			</article>
+		</section>
+		<section id="cabeceranav" class="col-xs-12 col-md-4 col-lg-2">
+	<article id="menunavegacion" class="d-lg-none">
+		<button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span
+				class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+			<!-- Links -->
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link card" href="index.html">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link card" href="catalogo.html">Catalogo <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link card" href="reutilizamiento.html">Reutilizamiento</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link card" href="blog.html">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link card" href="enterprise.html">Nuestra Empresa</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link card" href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+			<!-- Links -->
+
+		</div>
+	</article>
+
+	<article id="espacioderecha" class="d-none d-lg-block">
+
+	</article>
+</section>
+</header>
+</div>
+
+
+
+
+
+<main class="container-fluid">
+
+	<section id="cabeceracatalogo" class="row justify-content-center">
+		<article>
+			<h2>Catalogo</h2>
+		</article>
+	</section>
+
+<!--Seccion donde configurare el boton que ordene de mayor a menor-->
+	<section class="row justify-content-center" id="ordenarproductos">
+		<h3>Filtrar por:</h3>
+	</section>
+	<section class="row justify-content-center" id="botonesordenar">
+		<div class="col-xs-12 col-md-12 col-lg-3">
+			<button id="highLower" class="bn31"><span class="bn31span">Mas caro a barato</span></button>
+		</div>
+		<div class="col-xs-12 col-md-12 col-lg-3">
+			<button id="lowerHigh" class="bn31"><span class="bn31span">Mas barato a caro</span></button>
+		</div>
+		<div class="col-xs-12 col-md-12 col-lg-3">
+			<button id="resetdefault" class="bn31"><span class="bn31span">Por defecto</span></button>
+		</div>
+	</section>
+
+
+
+	<div class="row col-lg-12 bedrow justify-content-around">
+		<article class="col-xs-12 col-lg-3 camadisplay" id="primeraCama">
+			<a href="lexington.html" class="enlacecatalogo">
+			<h2>Cama Lexington</h2>
+			<img class="imagencama" src="img/camas/bed-575793_1280.png" alt="Cama Lexington" title="Cama Lexington">
+			<div class="bed_details">
+				<p class="pricetag" id="precio0">449,99&euro;</p>
+				<p class="priceiva">IVA INCLUIDO</p>
+				<hr>
+				<p>Tejido con malla transpirable</p>
+				<hr>
+				<p>Espuma ergonómica Aircell</p>
+				<hr>
+				<p>Viscoelástica</p>
+				<hr>
+				<p>Viene funda incluida</p>
+				<p><button class="buyproduct">COMPRAR</button></p>
+			</div>
+		</a>
+		</article>
+
+
+		<article class="col-xs-12 col-lg-3 camadisplay" id="segundaCama">
+			<a href="ovejitasintetica.html" class="enlacecatalogo">
+			<h2>Cama Ovejita Sintetica</h2>
+			<img class="imagencama" src="img/camas/bed-575794_1280.png" alt="Cama Ovejita Sintetica" title="Cama Ovejita Sintetica">
+			<div class="bed_details">
+				<p class="pricetag" id="precio1">358,20&euro;</p>
+				<p class="priceiva">IVA INCLUIDO</p>
+				<hr>
+				<p> Tejido con materiales sintéticos</p>
+				<hr>
+				<p>Espuma tradicional</p>
+				<hr>
+				<p>Cama Elastica a metodo tradicional</p>
+				<hr>
+				<p>Espuma 25 kg m/3</p>
+
+				<p><button class="buyproduct">COMPRAR</button></p>
+			</div>
+				</a>
+		</article>
+
+
+		<article class="col-xs-12 col-lg-3 camadisplay" id="terceraCama">
+			<a href="ovejitaviscosintetica.html" class="enlacecatalogo">
+			<h2>Cama Ovejita Viscosintetica</h2>
+			<img class="imagencama" src="img/camas/bed-575791_1280.png" alt="Cama Ovejita Viscosintetica" title="Cama Ovejita Viscosintetica">
+			<div class="bed_details">
+				<p class="pricetag" id="precio2">179,99&euro;</p>
+				<p class="priceiva">IVA INCLUIDO</p>
+				<hr>
+				<p>Tejido con materiales viscosinteticos</p>
+				<hr>
+				<p>Espuma reciclada</p>
+				<hr>
+				<p>Viscoelástica</p>
+				<hr>
+				<p>Placa de Fieltros RMA</p>
+
+				<p><button class="buyproduct">COMPRAR</button></p>
+			</div>
+			</a>
+		</article>
+	</div>
+	</main>
+
+	<footer id="piefoot" class="row col-lg-12">
+		<article class="col-lg-3 footerarticle">
+			<h2>AVISOS LEGALES</h2>
+			<p><a href="pop.html" target="_blank">
+					POLITICA DE PRIVACIDAD
+				</a></p>
+		</article>
+		<article id="blogfooter" class="col-lg-3 footerarticle">
+			<h2>BLOG</h2>
+			<p><a href="whyrecycling.html" target="_blank">
+					¿POR QUÉ RECICLAR?
+				</a></p>
+			<p><a href="fabrication.html" target="_blank">
+					NUESTRA FABRICACIÓN
+				</a></p>
+			<p><a href="guidemattress.html" target="_blank">
+					GUIA PARA SELECCIONAR COLCHÓN
+				</a></p>
+		</article>
+		<article class="col-lg-3 footerarticle">
+			<h2>SOBRE LA COMPRA</h2>
+			<p><a href="aboutbuying.html#bigbuy" target="_blank">
+					COMPRAS GRANDES
+				</a></p>
+			<p><a href="aboutbuying.html#canarias_shipment" target="_blank">
+					ENVIOS A CANARIAS
+				</a></p>
+			<p><a href="aboutbuying.html#refundsystem" target="_blank">
+					SISTEMA DE DEVOLUCIÓN
+				</a></p>
+		</article>
+		<article id="rrssfooter" class="col-lg-3 footerarticle">
+			<h2>RRSS</h2>
+			<a href="javascript:void(0);" onclick="window.open(uf,'gplusshare','toolbar=0,status=0,width=600,height=400')"><img src="img/facebook.png" alt="Facebook" title="Facebook" class="iconmedia"></a>
+
+			<a href="javascript:void(0);" onclick="window.open(tw,'gplusshare','toolbar=0,status=0,width=600,height=400')"><img src="img/twitter.png" alt="Twitter" title="Twitter" class="iconmedia"></a>
+
+			<a href="javascript:void(0);" onclick="window.open(ig,'gplusshare','toolbar=0,status=0,width=600,height=400')"><img src="img/instagram.png" alt="Instagram" title="Instagram" class="iconmedia"></a>
+
+			<a href="javascript:void(0);" onclick="window.open(pt,'gplusshare','toolbar=0,status=0,width=600,height=400')"><img src="img/whatsapp.png" alt="WhatsApp" title="WhatsApp" class="iconmedia"></a>
+		</article>
+		<hr />
+		<article id="paymentmethods" class="col-lg-12">
+			<img src="img/paymentmethodsfirst.png" alt="VISA | AMERICAN EXPRESS | MASTERCARD" title="Metodos de Pago" />
+			<img src="img/paymentmethodssecond.png" alt="PAYPAL | MASTERCARD | BANK TRANSFER" title="Metodos de Pago" />
+		</article>
+		<article id="legalinfo" class="col-lg-12">
+			<p>
+				MAURICIO HENRIQUES | CIF:A2222222 | Casa Alta de Valquemado, 28210 Valdemorillo, Madrid
+			</p>
+		</article>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+	<script>
+		var ub = window.location;
+		var uf = "https://www.facebook.com/marketplace/?ref=bookmark" + ub;
+		var tw = "https://www.twitter.com/" + ub;
+		var ig = "https://www.instagram.com/" + ub;
+		var pt = "https://web.whatsapp.com/" + ub;
+	</script>
+	<script src="js/script.js"></script>
+	<script src="js/filter.js"></script>
+</body>
+
+</html>

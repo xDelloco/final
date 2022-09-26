@@ -1,0 +1,201 @@
+/* HOJA DE ESTILOS GENERAL, AQUI SE APLICARAN CAMBIOS DESTINADOS A, BOOTSTRAP, HEADER Y FOOTER*/
+/*Sección de modificaciones a bootstrap*/
+/*bootstrap del menu*/
+#dropdownMenuButton {
+  font: bold 18px Arial, sans-serif;
+  color: black;
+  background-color: white;
+  margin-top: 7%;
+}
+
+/***/
+/*Algunos reajustes del CSS relacionado al box shadow que viene incluido en el bootstrap 4 debido a que no funciona correctamente.*/
+.btn-secondary.focus,
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: 0 0 0 0 !important;
+}
+
+/****/
+/*flecha abajo del menu cambiar color*/
+.dropdown-toggle::after {
+  color: #049404;
+}
+
+/***/
+/*las tres barras que representan que seccion del slider se esta visualizando*/
+.carousel-indicators li {
+  cursor: pointer;
+}
+
+/***/
+/*Ligera modificacion a la clase ".row" y ".container-fluid" ya que me esta generando un espacio flotante en la web y permite al usuario deslizar horizontalmente*/
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/**********/
+/*Estilo de la cabecera*/
+#cabecerageneral {
+  width: 100%;
+  background-color: white;
+  border-bottom:1px solid black;
+}
+
+#cabeceratitle>#navegacion {
+  display: flex;
+  height: 100%;
+}
+
+#menunavegacion img {
+  width: 30%;
+}
+
+#cabeceralogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cabeceralogo img {
+  display: block;
+  padding: 5%;
+  margin: 0 auto;
+  width: 50%;
+}
+
+/**********/
+/*Estilo del menu de navegación en la cabecera*/
+#menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+#menu>li {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  padding: 15px 15px 0px 15px;
+}
+
+#menu li>ul {
+  background-color: #094660;
+  position: absolute;
+  top: 50px;
+  left: 10%;
+  font-size: 24px;
+  line-height: 64px;
+  padding: 5%;
+  list-style: none;
+  border: 1px solid #093360;
+  border-radius: 0px 0px 15px 15px;
+  display: none;
+  /*oculta el elemento*/
+  z-index: 1000;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
+  font: bold 18px Arial, sans-serif;
+}
+
+/**********/
+/*Estilo aplicado al footer*/
+
+#piefoot {
+  padding-top:3%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 5%;
+  margin-right: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: rgba(126, 250, 126, 0.2);
+}
+
+#piefoot h2 {
+  text-align: center;
+}
+
+#piefoot ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#paymentmethods {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#paymentmethods img {
+  width: 20%;
+}
+
+#rrssfooter img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+#legalinfo {
+  text-align: center;
+  color: #4f4f4f;
+  font-size: 14px;
+}
+
+/*Estilo para la animacion con IntersectionObserver*/
+
+.intobserver {
+  transform: translateX(-200px);
+  opacity: 0;
+  transition: 150ms;
+}
+
+.intobserver.show {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media screen and (max-width:768px){
+  #cabeceralogo img{
+    width:30%;
+  }
+}
+
+
+/*Mediaquery para los metodos de pago del footer*/
+@media screen and (max-width:1024px) and (min-width:320px){
+  #paymentmethods img{
+    width:40%;
+  }
+}
+
+/*Pequeño problema con el mediaquery del header*/
+@media screen and (max-width:1070px) and (min-width:1024px){
+  #menu>li{
+    height:auto;
+  }
+}
